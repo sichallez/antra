@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.home_wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.header_link {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.header_title {
+    text-decoration: underline;
+}
+
+.header_image {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+}
+
+.card {
+    padding: 20px;
+    box-shadow: 0 0 0 5px rgb(232, 232, 232);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow border 1s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 2px rgb(232, 232, 232);
+    border-radius: 5px;
+}
+
+.card_category {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_title {
+    margin-top: 10px;
+}
+
+.card_date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.card_paragraph {
+    margin-top: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.35rem;
+}
+
+.card_link {
+    color: rgb(31, 111, 231);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+}
+
+article div {
+    margin-top: 35px;
+}
+
+footer {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 70%;
+    background-color: rgb(245, 245, 245);
+    border-top: 1px solid rgb(228, 228, 228);
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.footer_text {
+    color: gray;
+    font-size: 1.3rem;
+}
+
+.footer_text a {
+    color: rgb(31, 111, 231);
+}
+
+.footer_link {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: rgb(31, 111, 231);
+}
+
+.paragraph_text_blue {
+    color: blue;
+}
+
+.paragraph_text_green {
+    color: rgb(12, 175, 12);
+}
+
+.paragraph_text_arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bordered {
+    border: solid 1px lightgray;
+}
+
+.bordered-bottom {
+    border-bottom: solid 1px lightgray;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 35px 25px;
+}
+
+.span6 {
+    grid-column: span 6;
+}
+
+@media (max-width: 740px) {
+    .container {
+        padding: 0 8%;
+    }
+
+    .span12 {
+        grid-column: span 12;
+    }
+}
